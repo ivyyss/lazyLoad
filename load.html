@@ -52,7 +52,7 @@
                 $('.container img').not('[data-isloaded]').each(function(){
                   var $node = $(this)
                   if(isShow($node)){
-                    loadImg($node)
+                    setTimeout(loadImg($node),2000)
                   }
                 })
               }
